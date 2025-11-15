@@ -27,9 +27,13 @@ AGMD:
 	main.py
 	model.py
 	train_test.py
-	run.py
 	utils.py
 ```
+- configs: general configs
+- dataset: a simple implementation of dataset for dataloader
+- mian: parse params and call train or test
+- train_test: codes for train and test the models
+- utils: some general tools for runing the codes
 
 ## How to run the code
 
@@ -41,11 +45,17 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 3. install required lib<br>
 pip install -r requirements.txt
 
-- ### How to train:
-[TODO]
+- ### Train:
+  1. Train the teacher model:
+     python ./main.py --run_teacher y --task task2 --cmt y --anatomical_graph y --run_mode train
+  2. Train the student model:
+     python ./main.py --run_teacher n --task task2 --teacher_name [the pretrained teacher model] --run_mode train
 
-- ### How to test:
-[TODO]
+- ### Test:
+  1. Test the teacher model:
+     python ./main.py --run_teacher y --task task2 --teacher_name [the trained teacher model] --cmt y --anatomical_graph y --run_mode test
+  2. Test the student model:
+     python ./main.py --run_teacher n --task task2 --student_name [the trained student model] --run_mode test
 
 
 ## Citation
@@ -61,7 +71,6 @@ If you think this repository is useful, please cite this paper 😘:
   organization={Springer},
   doi={doi.org/10.1007/978-3-032-04984-1_8}
 }
-	}
 ```
 
 ## Issue
