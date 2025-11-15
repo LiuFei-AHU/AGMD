@@ -46,16 +46,24 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install -r requirements.txt
 
 - ### Train:
-  1. Train the teacher model:
-     python ./main.py --run_teacher y --task task2 --cmt y --anatomical_graph y --run_mode train
-  2. Train the student model:
+  - Train the teacher model:
+    ```
+    python ./main.py --run_teacher y --task task2 --cmt y --anatomical_graph y --run_mode train
+    ```
+  - Train the student model:
+    ```
      python ./main.py --run_teacher n --task task2 --teacher_name [the pretrained teacher model] --run_mode train
+    ```
 
 - ### Test:
-  1. Test the teacher model:
+  - Test the teacher model:
+     ```
      python ./main.py --run_teacher y --task task2 --teacher_name [the trained teacher model] --cmt y --anatomical_graph y --run_mode test
-  2. Test the student model:
+     ```
+  - Test the student model:
+     ```
      python ./main.py --run_teacher n --task task2 --student_name [the trained student model] --run_mode test
+     ```
 
 
 ## Citation
