@@ -22,11 +22,14 @@
 
 ```
 AGMD:
+	configs.py
+	dataset.py
+	main.py
 	model.py
+	train_test.py
 	run.py
 	utils.py
 ```
-[TODO]
 
 ## How to run the code
 
