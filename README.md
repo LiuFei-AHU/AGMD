@@ -28,12 +28,18 @@ AGMD:
 	model.py
 	train_test.py
 	utils.py
+	data
+		demo.npz
+		atlas
+			raal3_{}.pt
 ```
 - configs: general configs
 - dataset: a simple implementation of dataset for dataloader
 - mian: parse params and call train or test
 - train_test: codes for train and test the models
 - utils: some general tools for runing the codes
+- data/demo.npz: the demo data
+- data/atlas/raal3_{}.pt: the brain templates used in the code to build graphs
 
 ## How to run the code
 
@@ -41,7 +47,7 @@ AGMD:
 1. Create a conda environment <br>
 conda create -n AGMD
 2. install Pytorch cuda <br>
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 3. install required lib<br>
 pip install -r requirements.txt
 
