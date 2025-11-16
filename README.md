@@ -41,9 +41,13 @@ AGMD:
 - data/demo.npz: the demo data
 - data/atlas/raal3_{}.pt: the brain templates used in the code to build graphs
 
+## Dataset
+- The data used in this project are from the ADNI. The MRI and PET are preprocessed using SPM+CAT12, resizing to 113x137x113.
+- You should unzip the demo data before running the code.
+
 ## How to run the code
 
-- ### Prepare environment. [TODO]
+- ### Prepare environment.
 1. Create a conda environment <br>
 conda create -n AGMD
 2. install Pytorch cuda <br>
