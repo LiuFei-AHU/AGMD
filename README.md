@@ -34,10 +34,10 @@ AGMD:
 			raal3_{}.pt
 ```
 - configs: general configs
-- dataset: a simple implementation of dataset for dataloader
-- mian: parse params and call train or test
-- train_test: codes for train and test the models
-- utils: some general tools for runing the codes
+- dataset: a simple implementation of the Dataset for dataloader
+- main: parse params and call train or test
+- train_test: codes for training and testing the models
+- utils: some general tools for running the codes
 - data/demo.npz: the demo data
 - data/atlas/raal3_{}.pt: the brain templates used in the code to build graphs
 
