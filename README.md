@@ -2,7 +2,7 @@
 
 - This is an official code repository for our paper, which can be found in [here](https://papers.miccai.org/miccai-2025/paper/3438_paper.pdf "here")👈.
 - Hope you like this work and do better works 😁.
-- The complete code will be publicly available soon! ⌛
+- The complete code is publicly available now! 
 
 
 ## Overall framework
